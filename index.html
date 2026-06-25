@@ -8,6 +8,7 @@
 <meta name="keywords" content="json formatter, json validator, json beautifier, json to csv, json to xml, format json online, json tree view, json minifier, json converter, json editor online">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://paprikaas.github.io/json-formatter/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="JSON Formatter & Validator - Free Online Tool">
 <meta property="og:description" content="Format, validate, beautify JSON online. Convert JSON to CSV, XML. Free, no ads, instant processing.">
 <meta property="og:url" content="https://paprikaas.github.io/json-formatter/">
@@ -81,6 +82,10 @@ body {
 }
 
 /* Header */
+.page-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+}
 header {
     background: var(--bg-secondary);
     border-bottom: 1px solid var(--border);
@@ -324,6 +329,7 @@ footer a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
+<div class="page-wrapper">
 
 <header>
     <div class="header-left">
@@ -383,6 +389,8 @@ footer a:hover { text-decoration: underline; }
     <br>
     <span>More tools: <a href="https://paprikaas.github.io/cron-generator/">Cron Generator</a></span>
 </footer>
+
+</div><!-- .page-wrapper -->
 
 <div class="toast" id="toast"></div>
 
