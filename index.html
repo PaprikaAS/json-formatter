@@ -388,7 +388,12 @@ footer a:hover { text-decoration: underline; }
 <footer>
     <span id="footer-text">Free Online JSON Formatter & Validator — No ads, no data collection, all processing happens in your browser.</span>
     <br>
-    <span>More tools: <a href="https://paprikaas.github.io/cron-generator/">Cron Generator</a></span>
+    <span>More tools: 
+        <a href="https://paprikaas.github.io/cron-generator/">Cron Generator</a> &middot; 
+        <a href="https://paprikaas.github.io/json-formatter/">JSON Formatter</a> &middot; 
+        <a href="https://paprikaas.github.io/base64-encoder/">Base64 Encoder</a> &middot; 
+        <a href="https://paprikaas.github.io/url-encoder/">URL Encoder</a>
+    </span>
 </footer>
 
 </div><!-- .page-wrapper -->
@@ -444,7 +449,7 @@ function updateUI() {
             el.textContent = t(el.id);
         }
     });
-    document.getElementById('btn-theme').textContent = isDark ? '☀️ Light' : '🌙 Dark';
+    document.getElementById('btn-theme').textContent = isDark ? (lang === 'en' ? '☀ Light' : '☀ 浅色') : (lang === 'en' ? '🌙 Dark' : '🌙 暗色');
     document.getElementById('btn-lang').textContent = lang === 'en' ? '中文' : 'English';
     document.getElementById('footer-text').textContent = t('footer-text');
     document.getElementById('input').placeholder = t('placeholder');
